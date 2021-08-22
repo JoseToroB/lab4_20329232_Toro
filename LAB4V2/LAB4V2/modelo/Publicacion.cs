@@ -14,6 +14,7 @@ namespace modelo
         private List<Comentario> comentarios;
         private string contenido;
         private string fecha;
+        private string tipo;
         private Usuario autor;
         private int id;
         private int likes;
@@ -23,7 +24,7 @@ namespace modelo
         /// <summary>
         /// Constructor de una pregunta, recibe un titulo, contenido y lista de etiquetas para la pregunta.
         /// </summary>
-        public Publicacion(Usuario autor, string contenido, List<string> et)
+        public Publicacion(Usuario autor, string contenido, List<string> et,string tipo)
         {
             this.contenido = contenido;
             this.autor = autor;
@@ -33,6 +34,7 @@ namespace modelo
             idContador += 1;
             this.id = idContador;
             this.et = et;
+            this.tipo = tipo;
             //conseguir la fecha mediante datetime
             DateTime fecha = DateTime.Now;
             this.fecha = fecha.ToString("dd'/'MM'/'yyyy");
@@ -52,5 +54,8 @@ namespace modelo
         public int Id { get => id; set => id = value; }
         /// <value> Devuelve o setea los likes </value>
         public int Likes { get => likes; set => likes = value; }
+        /// <value> devuelve o sete el tipo </value>
+
+        public string Tipo { get => tipo; set => tipo = value; }
     }
 }

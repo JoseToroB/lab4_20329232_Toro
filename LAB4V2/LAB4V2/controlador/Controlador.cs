@@ -59,17 +59,17 @@ namespace controlador
                 Usuario user4 = new Usuario("popo", "123");
                 //crear las publis
                 List<string> et = new List<string>(); //en ninguna publicacion se hacen etiquetados
-                Publicacion Publi1 = new Publicacion(user1, "gente me mudo a chillan :c",et);
+                Publicacion Publi1 = new Publicacion(user1, "gente me mudo a chillan :c",et, "texto");
                 user1.PublisRealizadas.Add(Publi1);
-                Publicacion Publi2 = new Publicacion(user1, "amigos, cuando venga a stgo quien va a querer longanizas?",et);
+                Publicacion Publi2 = new Publicacion(user1, "amigos, cuando venga a stgo quien va a querer longanizas?",et,"texto");
                 user1.PublisRealizadas.Add(Publi2);
-                Publicacion Publi3 = new Publicacion(user1, "hace frio en chillan, pero almenos las longanizas saben de pana", et);
+                Publicacion Publi3 = new Publicacion(user1, "hace frio en chillan, pero almenos las longanizas saben de pana", et, "texto");
                 user1.PublisRealizadas.Add(Publi3);
-                Publicacion Publi4 = new Publicacion(user2, "algun datito de pega en talca?, que no sea vendiendo completos porfa ", et);
+                Publicacion Publi4 = new Publicacion(user2, "algun datito de pega en talca?, que no sea vendiendo completos porfa ", et, "texto");
                 user2.PublisRealizadas.Add(Publi4);
-                Publicacion Publi5 = new Publicacion(user3, "alguien que venda una bici, con las 3b en antofa?", et);
+                Publicacion Publi5 = new Publicacion(user3, "alguien que venda una bici, con las 3b en antofa?", et, "texto");
                 user3.PublisRealizadas.Add(Publi5);
-                Publicacion Publi6 = new Publicacion(user4, "amigos, tengo el mejor internet de la zona, llamenme al +569 1234 5678 para contratarlo", et);
+                Publicacion Publi6 = new Publicacion(user4, "amigos, tengo el mejor internet de la zona, llamenme al +569 1234 5678 para contratarlo", et, "texto");
                 user4.PublisRealizadas.Add(Publi6);
                 //crear comentarios
                 Comentario com1 = new Comentario(user1, "me interesa, podria darme mas info?");
@@ -320,21 +320,91 @@ namespace controlador
             return redS.UsuarioConectado.PublisRealizadas;
         }
 
+        //
+        //Funciones 
+        //para el funcionamiento de la RS
+        //
+
+        //post
         /// <summary>
         /// funcion que sirve para crear una publicacion
         /// </summary>
-        public void post(string contenido, List<string> et)
+        public void post(string contenido, List<string> et,string tipo)
         {
-            Publicacion publi = new Publicacion(redS.UsuarioConectado, contenido, et);//genero la publicacion
+            Publicacion publi = new Publicacion(redS.UsuarioConectado, contenido, et,tipo);//genero la publicacion
             redS.Publis.Add(publi);//la agrego a la rs
             redS.UsuarioConectado.PublisRealizadas.Add(publi);//la agrego a la lista del user
         }
+
+        //comentar
         /// <summary>
-        /// funcion que sirve para crear un comentario
+        /// funcion que sirve para comentar a una publi
         /// </summary>
-        public void comentar(string contenido)
+        public void comentarPubli(Publicacion publi,string contenido,Usuario autor)
         {
-            
+            Comentario coment = new Comentario(autor, contenido);//creo el comentario
+            publi.Comentarios.Add(coment);//agrego el comentario a la publicacion
+            autor.ComentariosRealizados.Add(coment);//agrego el comentario al autor
+        }
+        /// <summary>
+        /// funcion que sirve para comentar a un comentario
+        /// </summary>
+        public void comentarComentario(string contenido,Comentario comentObj,Usuario autor)
+        {
+            Comentario coment = new Comentario(autor, contenido);//creo el comentario
+            comentObj.Comentarios.Add(coment);//agrego el comentario al comentario objetivo
+            autor.ComentariosRealizados.Add(coment);//agrego el comentario al usuario
+        }
+
+        //like
+        /// <summary>
+        /// funcion que permite dar like a una publicacion
+        /// </summary>
+        public void likePublicacion(Publicacion publi)
+        {
+            publi.Likes++;
+        }
+        
+
+        /// <summary>
+        /// funcion que permite dar like a un comentario
+        /// </summary>
+        public void likeComentario(Comentario coment)
+        {
+            coment.Likes++;
+        }
+        //follow
+        ///<summary>
+        ///funcion que permite al usuario conectado, seguir al usuario deseado en caso de existir
+        ///</sumary>
+        public void follow(string userAseguir)
+        {
+            if (redS.Usuarios.Any(i => i.Username == userAseguir))//si el user existe
+            {
+                if(redS.UsuarioConectado.Seguidos.Any(i => i == userAseguir))//si encuentra que ya lo sigue
+                {
+                    //ya lo sigue
+                }
+                else
+                {
+                    redS.UsuarioConectado.Seguidos.Add(userAseguir);//lo agrego a sus seguidos
+                }
+            }
+            else
+            {
+                //si no existe el user
+            }
+        }
+
+        //share
+        ///<summary>
+        ///funcion que permite compartir una publicacion 
+        ///</summary>
+        public void share(Publicacion publi, List<string> et)
+        {
+            Compartidas compart = new Compartidas(publi, et);//creo la compartida
+            redS.UsuarioConectado.PublisCompartidas.Add(compart);//agrego la compartida al usuario
         }
     }
+
 }
