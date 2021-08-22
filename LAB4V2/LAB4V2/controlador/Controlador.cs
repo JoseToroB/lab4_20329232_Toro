@@ -320,5 +320,21 @@ namespace controlador
             return redS.UsuarioConectado.PublisRealizadas;
         }
 
+        /// <summary>
+        /// funcion que sirve para crear una publicacion
+        /// </summary>
+        public void post(string contenido, List<string> et)
+        {
+            Publicacion publi = new Publicacion(redS.UsuarioConectado, contenido, et);//genero la publicacion
+            redS.Publis.Add(publi);//la agrego a la rs
+            redS.UsuarioConectado.PublisRealizadas.Add(publi);//la agrego a la lista del user
+        }
+        /// <summary>
+        /// funcion que sirve para crear un comentario
+        /// </summary>
+        public void comentar(string contenido)
+        {
+            
+        }
     }
 }
