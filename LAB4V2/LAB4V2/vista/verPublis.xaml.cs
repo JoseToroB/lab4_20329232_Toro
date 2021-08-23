@@ -47,19 +47,6 @@ namespace LAB4V2.vista
             verunaPublicacion.Show();
             this.Close();
         }
-
-
-
-
-        /*
-           private void ListBox_Preguntas_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            int indice = ListBox_Preguntas.Items.IndexOf(ListBox_Preguntas.SelectedItem);
-            ventanaPreguntaRespuesta ventanaPreguntaRespuesta = new ventanaPreguntaRespuesta(indice);
-            ventanaPreguntaRespuesta.Show();
-            this.Close();
-        }
-         */
     }
 
 }
