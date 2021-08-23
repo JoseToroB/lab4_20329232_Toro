@@ -1,0 +1,25 @@
+﻿<Window x:Class="LAB4V2.vista.VentanaUserRegistrado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB4V2.vista"
+        mc:Ignorable="d"
+        Title="VentanaUserRegistrado" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkGray" Offset="0.25"/>
+                <GradientStop Color="Gray" Offset="0.5"/>
+                <GradientStop Color="LightGray" Offset="0.75"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="nombrePibeOnline" Content="" HorizontalAlignment="Left" Margin="45,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="fechaHoy" Content="" HorizontalAlignment="Left" Margin="699,36,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Publicar" Content="Publicar" HorizontalAlignment="Left" Margin="344,124,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="Publicar_Click"/>
+        <Button x:Name="seguirUser" Content="Seguir Usuario" HorizontalAlignment="Left" Margin="344,171,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="seguirUser_Click"/>
+        <Button x:Name="comentar" Content="Comentar" HorizontalAlignment="Left" Margin="344,218,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="comentar_Click"/>
+        <Button x:Name="logout" Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="344,264,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="logout_Click" />
+
+    </Grid>
+</Window>

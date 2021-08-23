@@ -1,0 +1,25 @@
+﻿<Window x:Class="LAB4V2.vista.registerV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB4V2.vista"
+        mc:Ignorable="d"
+        Title="registerV" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkGray" Offset="0.25"/>
+                <GradientStop Color="Gray" Offset="0.5"/>
+                <GradientStop Color="LightGray" Offset="0.75"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="NombreUser" Content="Nombre de Usuario" HorizontalAlignment="Left" Margin="111,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contrasenia de Usuario" HorizontalAlignment="Left" Margin="111,190,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="salir" Content="Salir" HorizontalAlignment="Left" Margin="111,328,0,0" VerticalAlignment="Top" Width="308" Height="60" Click="salir_Click"/>
+        <Button x:Name="Register" Content="Registrarse" HorizontalAlignment="Left" Margin="453,328,0,0" VerticalAlignment="Top" Width="259" Click="Button_Click" Height="64"/>
+        <TextBox x:Name="nick" HorizontalAlignment="Left" Height="66" Margin="98,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407"/>
+        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="50" Margin="98,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407"/>
+
+    </Grid>
+</Window>

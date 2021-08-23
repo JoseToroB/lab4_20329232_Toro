@@ -329,70 +329,80 @@ namespace controlador
         /// <summary>
         /// funcion que sirve para crear una publicacion
         /// </summary>
-        public void post(string contenido, List<string> et,string tipo)
+        public bool post(string contenido, List<string> et,string tipo)
         {
             Publicacion publi = new Publicacion(redS.UsuarioConectado, contenido, et,tipo);//genero la publicacion
             redS.Publis.Add(publi);//la agrego a la rs
             redS.UsuarioConectado.PublisRealizadas.Add(publi);//la agrego a la lista del user
+            return true;
         }
 
         //comentar
         /// <summary>
         /// funcion que sirve para comentar a una publi
         /// </summary>
-        public void comentarPubli(Publicacion publi,string contenido,Usuario autor)
+        public bool comentarPubli(Publicacion publi,string contenido,Usuario autor)
         {
             Comentario coment = new Comentario(autor, contenido);//creo el comentario
             publi.Comentarios.Add(coment);//agrego el comentario a la publicacion
             autor.ComentariosRealizados.Add(coment);//agrego el comentario al autor
+            return true;
         }
         /// <summary>
         /// funcion que sirve para comentar a un comentario
         /// </summary>
-        public void comentarComentario(string contenido,Comentario comentObj,Usuario autor)
+        public bool comentarComentario(string contenido,Comentario comentObj,Usuario autor)
         {
             Comentario coment = new Comentario(autor, contenido);//creo el comentario
             comentObj.Comentarios.Add(coment);//agrego el comentario al comentario objetivo
             autor.ComentariosRealizados.Add(coment);//agrego el comentario al usuario
+            return true;
         }
 
         //like
         /// <summary>
         /// funcion que permite dar like a una publicacion
         /// </summary>
-        public void likePublicacion(Publicacion publi)
+        public bool likePublicacion(Publicacion publi)
         {
             publi.Likes++;
+            return true;
         }
         
 
         /// <summary>
         /// funcion que permite dar like a un comentario
         /// </summary>
-        public void likeComentario(Comentario coment)
+        public bool likeComentario(Comentario coment)
         {
             coment.Likes++;
-        }
+            return true;
+         }
         //follow
         ///<summary>
         ///funcion que permite al usuario conectado, seguir al usuario deseado en caso de existir
         ///</sumary>
-        public void follow(string userAseguir)
+        public bool follow(string userAseguir)
         {
+            if(redS.UsuarioConectado.Username == userAseguir)
+            {
+                return false;
+            }
             if (redS.Usuarios.Any(i => i.Username == userAseguir))//si el user existe
             {
                 if(redS.UsuarioConectado.Seguidos.Any(i => i == userAseguir))//si encuentra que ya lo sigue
                 {
-                    //ya lo sigue
+                    return false;
                 }
                 else
                 {
                     redS.UsuarioConectado.Seguidos.Add(userAseguir);//lo agrego a sus seguidos
+                    return true;
                 }
             }
             else
             {
-                //si no existe el user
+                return false;
             }
         }
 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LAB4V2.vista;
 
 namespace LAB4V2
 {
@@ -23,6 +24,20 @@ namespace LAB4V2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void irAregister_Click(object sender, RoutedEventArgs e)
+        {
+            registerV registerVentana = new registerV();
+            registerVentana.Show();
+            this.Close();
+        }
+
+        private void irALogin_click(object sender, RoutedEventArgs e)
+        {
+            loginV loginventana = new loginV();
+            loginventana.Show();
+            this.Close();
         }
     }
 }

@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB4V2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Twitbook" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkGray" Offset="0.25"/>
+                <GradientStop Color="Gray" Offset="0.5"/>
+                <GradientStop Color="LightGray" Offset="0.75"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="irAregister" Content="Registrarse" HorizontalAlignment="Left" Margin="306,196,0,0" VerticalAlignment="Top" Width="150" Click="irAregister_Click" Height="80"/>
+        <Button x:Name="irAlogin" Content="Logearse" HorizontalAlignment="Left" Margin="306,93,0,0" VerticalAlignment="Top" Width="150" Click="irALogin_click" Height="80"/>
+        <Button x:Name="Cerrar" Content="Cerrar" HorizontalAlignment="Left" Margin="306,298,0,0" VerticalAlignment="Top" Width="150" Click="irAregister_Click" Height="80"/>
+        <Label Content="Bienvenido a Twitbook" HorizontalAlignment="Center" Margin="261,8,276,331" VerticalAlignment="Center" Height="80" Width="255" FontWeight="Bold" FontSize="22"/>
+
     </Grid>
 </Window>
