@@ -37,6 +37,7 @@ namespace LAB4V2.vista
                 if (controlador.follow(userAseguir.Text))
                 {
                     MessageBox.Show("Ahora sigues a este Usuario");
+
                 }
                 else
                 {

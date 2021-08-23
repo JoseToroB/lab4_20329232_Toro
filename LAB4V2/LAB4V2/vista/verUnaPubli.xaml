@@ -14,11 +14,11 @@
                 <GradientStop Color="LightGray" Offset="0.75"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="Autor" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="ID" HorizontalAlignment="Left" Height="23" Margin="602,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="contenido" HorizontalAlignment="Left" Height="85" Margin="62,51,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="660"/>
-        <TextBox x:Name="likes" HorizontalAlignment="Left" Height="23" Margin="10,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
-        <Button x:Name="Volver" Content="Volver" HorizontalAlignment="Left" Margin="524,171,0,0" VerticalAlignment="Top" Width="75" Click="Volver_Click"/>
+        <TextBlock x:Name="Autor" HorizontalAlignment="Left" Height="23" Margin="62,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="ID" HorizontalAlignment="Left" Height="23" Margin="696,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="contenido" HorizontalAlignment="Left" Height="85" Margin="134,51,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="660"/>
+        <TextBlock x:Name="likes" HorizontalAlignment="Left" Height="23" Margin="62,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <Button x:Name="Volver" Content="Volver" HorizontalAlignment="Left" Margin="344,171,0,0" VerticalAlignment="Top" Width="75" Click="Volver_Click"/>
         <ListBox x:Name="CajaComentarios" HorizontalAlignment="Left" Height="324" Margin="37,199,0,0" VerticalAlignment="Top" Width="880" Background="White" BorderThickness="3,3,3,3" BorderBrush="Black" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -41,6 +41,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <Label Content="Likes" HorizontalAlignment="Left" Margin="37,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autor" HorizontalAlignment="Left" Margin="62,7,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="711,5,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="compartir" Content="Compartir Publicacion" HorizontalAlignment="Left" Margin="603,171,0,0" VerticalAlignment="Top" Width="151" Click="compartir_Click"/>
 
     </Grid>
 </Window>

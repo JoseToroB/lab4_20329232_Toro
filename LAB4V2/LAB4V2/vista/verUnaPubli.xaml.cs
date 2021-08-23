@@ -21,10 +21,13 @@ namespace LAB4V2.vista
     public partial class verUnaPubli : Window
     {
         Controlador controlador = (Controlador)Application.Current.FindResource("controlador");
+        private int id;
         public verUnaPubli(int id)
         {
             InitializeComponent();
             rellenarPublicacion(id);
+            this.id = id;
+
         }
         public void rellenarPublicacion(int id)
         {
@@ -42,5 +45,12 @@ namespace LAB4V2.vista
             this.Close();
         }
 
+        private void compartir_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> et = new List<string>();
+            controlador.share(controlador.GetPubliIndex(id), et);
+            MessageBox.Show("Compartida, esta funcion aun no esta del todo terminada, lo sentimos :c");
+            
+        }
     }
 }
