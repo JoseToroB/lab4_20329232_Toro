@@ -1,0 +1,4 @@
+la autoevaluacion esta presente en el informe, de todas formas aqui esta resumida.
+cumpli la mayoria de los requisitos ya sean funcionales y no funcionales
+el unico punto a evaluar que no cumpli fue el uso constante de github, esto debido a temas personales, como cambio de casa,
+entre otros que no vale la pena entrar a detallar.
