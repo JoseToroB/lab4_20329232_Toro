@@ -24,7 +24,7 @@ namespace LAB4V2.vista
         public VentanaUserRegistrado()
         {
             InitializeComponent();
-            nombrePibeOnline.Content = controlador.getUsernameOnline();
+            nombrePibeOnline.Content = "Conectado como "+ controlador.getUsernameOnline();
         }
 
         private void logout_Click(object sender, RoutedEventArgs e)

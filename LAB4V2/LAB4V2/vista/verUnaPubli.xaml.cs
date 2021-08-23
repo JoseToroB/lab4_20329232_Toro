@@ -33,6 +33,7 @@ namespace LAB4V2.vista
             ID.Text = idchar;
             contenido.Text = controlador.GetPubliIndex(id).Contenido;
             likes.Text = controlador.GetPubliIndex(id).Likes.ToString();
+            CajaComentarios.ItemsSource = controlador.GetPubliIndex(id).Comentarios;
         }
         private void Volver_Click(object sender, RoutedEventArgs e)
         {
@@ -40,5 +41,6 @@ namespace LAB4V2.vista
             volver.Show();
             this.Close();
         }
+
     }
 }

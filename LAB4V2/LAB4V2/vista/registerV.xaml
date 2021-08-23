@@ -16,10 +16,10 @@
         </Grid.Background>
         <Label x:Name="NombreUser" Content="Nombre de Usuario" HorizontalAlignment="Left" Margin="111,40,0,0" VerticalAlignment="Top"/>
         <Label Content="Contrasenia de Usuario" HorizontalAlignment="Left" Margin="111,190,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="salir" Content="Salir" HorizontalAlignment="Left" Margin="111,328,0,0" VerticalAlignment="Top" Width="308" Height="60" Click="salir_Click"/>
+        <Button x:Name="salir" Content="Volver" HorizontalAlignment="Left" Margin="111,328,0,0" VerticalAlignment="Top" Width="308" Height="60" Click="salir_Click"/>
         <Button x:Name="Register" Content="Registrarse" HorizontalAlignment="Left" Margin="453,328,0,0" VerticalAlignment="Top" Width="259" Click="Button_Click" Height="64"/>
-        <TextBox x:Name="nick" HorizontalAlignment="Left" Height="66" Margin="98,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407"/>
-        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="50" Margin="98,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407"/>
+        <TextBox x:Name="nick" HorizontalAlignment="Left" Height="50" Margin="98,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" FontSize="36"/>
+        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="50" Margin="98,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" FontSize="36"/>
 
     </Grid>
 </Window>

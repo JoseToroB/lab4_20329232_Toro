@@ -24,6 +24,7 @@ namespace controlador
         {
             this.redS = new RedS();
             this.cargado= false;
+            rellenarRS();
         }
 
         //Metodos

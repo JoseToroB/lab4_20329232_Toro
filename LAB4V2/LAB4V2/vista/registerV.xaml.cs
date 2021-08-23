@@ -53,7 +53,8 @@ namespace LAB4V2.vista
 
         private void salir_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Saliste pa siempre capo");
+            MainWindow volver = new MainWindow();
+            volver.Show();
             this.Close();
         }
     }

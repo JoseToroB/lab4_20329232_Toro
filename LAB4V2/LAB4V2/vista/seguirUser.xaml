@@ -14,9 +14,9 @@
                 <GradientStop Color="LightGray" Offset="0.75"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="Ingrese el nombre del usuario a Seguir" HorizontalAlignment="Left" Margin="271,132,0,0" VerticalAlignment="Top" Width="275"/>
+        <Label Content="Ingrese el nombre del usuario a Seguir" HorizontalAlignment="Left" Margin="69,52,0,0" VerticalAlignment="Top" Width="689" FontSize="36"/>
         <Button x:Name="seguirUsuario" Content="Seguir" HorizontalAlignment="Left" Margin="498,315,0,0" VerticalAlignment="Top" Width="125" Height="50" Click="seguirUsuario_Click"/>
         <Button x:Name="volverVentanaUserRegistrado" Content="Volver" HorizontalAlignment="Left" Margin="213,315,0,0" VerticalAlignment="Top" Width="125" Height="50" Click="volverVentanaUserRegistrado_Click"/>
-        <TextBox x:Name="userAseguir" HorizontalAlignment="Left" Height="23" Margin="233,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352"/>
+        <TextBox x:Name="userAseguir" HorizontalAlignment="Left" Height="55" Margin="125,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="556" FontSize="36"/>
     </Grid>
 </Window>

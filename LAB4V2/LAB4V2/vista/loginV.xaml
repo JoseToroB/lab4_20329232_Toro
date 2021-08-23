@@ -14,8 +14,8 @@
                 <GradientStop Color="LightGray" Offset="0.75"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="nick" HorizontalAlignment="Left" Height="29" Margin="271,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286"/>
-        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="23" Margin="271,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286"/>
+        <TextBox x:Name="nick" HorizontalAlignment="Left" Height="71" Margin="271,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontSize="48"/>
+        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="49" Margin="271,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontSize="36"/>
         <Label Content="Usuario" HorizontalAlignment="Left" Margin="271,45,0,0" VerticalAlignment="Top" Height="30" Width="62" RenderTransformOrigin="3.113,0.867"/>
         <Button x:Name="logearse" Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="555,308,0,0" VerticalAlignment="Top" Width="150" Height="80" Click="logearse_Click"/>
         <Button x:Name="Atras" Content="Volver" HorizontalAlignment="Left" Margin="151,308,0,0" VerticalAlignment="Top" Width="150" Height="80" Click="Atras_Click"/>

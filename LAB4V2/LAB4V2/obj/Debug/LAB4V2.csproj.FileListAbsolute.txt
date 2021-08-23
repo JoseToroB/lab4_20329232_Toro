@@ -28,5 +28,7 @@ C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\comentV.g.cs
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\comentV.baml
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verPublis.g.cs
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verPublis.baml
-C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\ventanaPreguntaRespuesta.g.cs
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verUnaPubli.g.cs
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verUnaPubli.baml
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\comentarioV.g.cs
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\comentarioV.baml

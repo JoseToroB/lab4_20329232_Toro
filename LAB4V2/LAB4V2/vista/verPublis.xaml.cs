@@ -42,7 +42,10 @@ namespace LAB4V2.vista
         private void dobleClickCaja(object sender, MouseButtonEventArgs e)
         {
             int n = mostrarPublis.Items.IndexOf(mostrarPublis.SelectedItem);
-            verUnaPubli verunaPublicacion = new verUnaPubli
+            n = n + 1;
+            verUnaPubli verunaPublicacion = new verUnaPubli(n);
+            verunaPublicacion.Show();
+            this.Close();
         }
 
 
