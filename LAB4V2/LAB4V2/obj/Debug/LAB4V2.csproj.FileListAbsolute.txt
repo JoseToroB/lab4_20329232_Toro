@@ -22,3 +22,11 @@ C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\loginV.g.cs
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\loginV.baml
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\seguirUser.g.cs
 C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\seguirUser.baml
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\publicarV.g.cs
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\publicarV.baml
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\comentV.g.cs
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\comentV.baml
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verPublis.g.cs
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verPublis.baml
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\ventanaPreguntaRespuesta.g.cs
+C:\Users\jtoro\Desktop\DASDAS\LAB4V2\LAB4V2\obj\Debug\vista\verUnaPubli.g.cs

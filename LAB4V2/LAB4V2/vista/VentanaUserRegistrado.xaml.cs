@@ -36,7 +36,9 @@ namespace LAB4V2.vista
 
         private void Publicar_Click(object sender, RoutedEventArgs e)
         {
-
+            publicarV publicar = new publicarV();
+            publicar.Show();
+            this.Close();
         }
 
         private void seguirUser_Click(object sender, RoutedEventArgs e)
@@ -48,7 +50,16 @@ namespace LAB4V2.vista
 
         private void comentar_Click(object sender, RoutedEventArgs e)
         {
+            comentV comentar = new comentV();
+            comentar.Show();
+            this.Close();
+        }
 
+        private void verPublisUser_Click(object sender, RoutedEventArgs e)
+        {
+            verPublis verpublis = new verPublis();
+            verpublis.Show();
+            this.Close();
         }
     }
 }

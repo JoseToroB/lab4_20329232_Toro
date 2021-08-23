@@ -1,0 +1,26 @@
+﻿<Window x:Class="LAB4V2.vista.comentV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB4V2.vista"
+        mc:Ignorable="d"
+        Title="Twitbook - Comentando" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkGray" Offset="0.25"/>
+                <GradientStop Color="Gray" Offset="0.5"/>
+                <GradientStop Color="LightGray" Offset="0.75"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <CheckBox x:Name="aPubli" Content="Comentario a una Publicacion" HorizontalAlignment="Left" Margin="295,50,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="135,21,152,0" TextWrapping="Wrap" Text="Si quieres responder a un Comentario, no marques esta casilla" VerticalAlignment="Top" Width="505" FontSize="18"/>
+        <TextBox x:Name="contenido" HorizontalAlignment="Left" Height="23" Margin="135,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="505"/>
+        <Label Content="Escriba aqui su comentario" HorizontalAlignment="Left" Margin="135,189,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="23" Margin="311,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ingrese la ID del comentario/publicacion" HorizontalAlignment="Left" Margin="259,105,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="comentar" Content="Comentar" HorizontalAlignment="Left" Margin="490,339,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="comentar_Click"/>
+        <Button x:Name="volver" Content="Volver" HorizontalAlignment="Left" Margin="137,339,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="volver_Click"/>
+    </Grid>
+</Window>

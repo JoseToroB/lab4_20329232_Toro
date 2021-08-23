@@ -20,6 +20,7 @@
         <Button x:Name="seguirUser" Content="Seguir Usuario" HorizontalAlignment="Left" Margin="344,171,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="seguirUser_Click"/>
         <Button x:Name="comentar" Content="Comentar" HorizontalAlignment="Left" Margin="344,218,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="comentar_Click"/>
         <Button x:Name="logout" Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="344,264,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="logout_Click" />
+        <Button x:Name="verPublisUser" Content="Ver publicaciones" HorizontalAlignment="Left" Margin="344,85,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="verPublisUser_Click"/>
 
     </Grid>
 </Window>

@@ -280,10 +280,20 @@ namespace controlador
         /// </returns>
         public Publicacion GetPubliIndex(int indice)
         {
-            return redS.Publis[indice];
+            return redS.Publis[indice-1];
         }
 
+        /// <summary>
+        /// Consigue y retorna un comentario por indice
+        /// </summary>
 
+        /// <returns>
+        /// Un comentario
+        /// </returns>
+        public Comentario GetComentarioIndex(int indice)
+        {
+            return redS.Comentarios[indice-1];
+        }
         /// <summary>
         /// Consigue y retorna el Autor de un comentario, dado comentario
 
@@ -306,7 +316,17 @@ namespace controlador
         {
             return redS.Usuarios;
         }
+        /// <summary>
+        /// Consigue y retorna el online
+        /// </summary>
 
+        /// <returns>
+        /// el user online
+        /// </returns>
+        public Usuario GetUserOnCompleto()
+        {
+            return redS.UsuarioConectado;
+        }
 
         /// <summary>
         /// Consigue y retorna las publis hechas por el usuario  conectado.

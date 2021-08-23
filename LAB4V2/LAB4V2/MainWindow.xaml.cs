@@ -39,5 +39,12 @@ namespace LAB4V2
             loginventana.Show();
             this.Close();
         }
+
+
+        private void cerrar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Adios");
+            this.Close();
+        }
     }
 }
